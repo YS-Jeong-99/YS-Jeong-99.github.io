@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.example.trenfit",
-    "sha256_cert_fingerprints":
-    ["2A:23:F5:E9:55:9A:27:0B:72:D6:E4:25:CD:BF:C2:B9:73:DE:69:F5:03:B7:1D:24:81:80:FD:42:13:2D:E2:69"]
-  }
-}]
