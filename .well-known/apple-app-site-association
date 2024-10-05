@@ -3,23 +3,11 @@
     "apps": [],
     "details": [
       {
-        "appIDs": [
-          "YR6JA8JHU3.com.trenfit.trenfit"
-        ],
+        "appID": "YR6JA8JHU3.com.trenfit.trenfit",
         "paths": [
           "*"
-        ],
-        "components": [
-          {
-            "/": "/*"
-          }
         ]
       }
-    ]
-  },
-  "webcredentials": {
-    "apps": [
-      "YR6JA8JHU3.com.trenfit.trenfit"
     ]
   }
 }
