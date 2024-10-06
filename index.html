@@ -11,21 +11,27 @@
         return urlParams.get(param);
       }
 
-      // 전달받은 id 값을 가져오기
+      // 전달받은 route 값을 가져오기
       var route = getQueryParam("route"); // 예: ?id=전달받은값
-      // 전달받은 param 값을 가져오기
-      var param = getQueryParam("param"); // 예: ?id=전달받은값
+      // 전달받은 id 값을 가져오기
+      var id = getQueryParam("id"); // 예: ?id=전달받은값
+      // 전달받은 incoming 값을 가져오기
+      var incoming = getQueryParam("incoming"); // 예: ?incoming=전달받은값
 
       // 기본 딥링크 URL
       var deeplinkUrl = "trenfit://"; // 기본 딥링크 URL
 
       // id 값이 있을 경우 딥링크 URL에 추가
       if (route) {
-        deeplinkUrl += "/" + encodeURIComponent(route); // id 값을 추가
+        deeplinkUrl += encodeURIComponent(route).replace(/%2F/g, "/");
       }
 
-      if (param) {
-        deeplinkUrl += "?" + encodeURIComponent(param); // id 값을 추가
+      if (id) {
+        deeplinkUrl += "?" + encodeURIComponent(id);
+      }
+
+      if (incoming) {
+        deeplinkUrl += "&" + encodeURIComponent(incoming);
       }
 
       var alertMessage =
