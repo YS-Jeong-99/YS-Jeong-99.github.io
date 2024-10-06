@@ -27,11 +27,11 @@
       }
 
       if (id) {
-        deeplinkUrl += "?" + encodeURIComponent(id);
+        deeplinkUrl += "?id=" + encodeURIComponent(id);
       }
 
       if (incoming) {
-        deeplinkUrl += "&" + encodeURIComponent(incoming);
+        deeplinkUrl += "&incoming=" + encodeURIComponent(incoming);
       }
 
       var alertMessage =
