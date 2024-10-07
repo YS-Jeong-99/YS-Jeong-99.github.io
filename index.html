@@ -24,7 +24,7 @@
       // id 값이 있을 경우 딥링크 URL에 추가
       if (route) {
         var encodedRoute = encodeURIComponent(route).replace(/%2F/g, "/");
-        deeplinkUrl += encodedRoute;
+        deeplinkUrl += "/" + encodedRoute;
       }
 
       if (id) {
